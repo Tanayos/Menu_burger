@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <header>
+        <div class="container">
+            <svg  width="100px" height="100px">
+                <path id="first" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
+                <path id="middle" d="M 30 50 L 70 50"></path>
+                <path id="second" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
+            </svg>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="">acceuil</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Equipe</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="trigger"></div>
+        </div>
+
+    </header> -->
+    <div id="wrapper">
+	<div class="main-item menu">
+		<span class="line line01"></span>
+		<span class="line line02"></span>
+		<span class="line line03"></span>
+	</div>
+</div>
+<nav class="navigation">
+    <ul>
+        <li><a href="">acceuil</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Equipe</a></li>
+        <li><a href="">Contact</a></li>
+
+    </ul>
+</nav>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <!-- <script src="app.js">
+    </script> -->
+    <script type="text/javascript">
+    var burger = (function burger() {
+        "use strict";
+
+        var burger, nav;
+
+        function toggleCSS() {
+            nav.classList.toggle("is-active");
+            burger.classList.toggle("is-active");
+
+        }
+
+        function initBurger() {
+            burger = $('.menu')[0];
+            nav = $('.navigation')[0];
+
+            burger.onclick = toggleCSS;
+        }
+        window.addEventListener("DOMContentLoaded", initBurger);
+        //window.addEventlistener("DOMContentLoaded", initBurger);
+
+        return {
+            init: initBurger
+        };
+    }());
+
+    </script>
+    <script type="text/javascript">
+    $("#wrapper").click( function() {
+	$(".menu").toggleClass("close");
+});
+
+    </script>
+</body>
+
+</html>
